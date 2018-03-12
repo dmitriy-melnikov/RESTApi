@@ -1,0 +1,35 @@
+{
+  "name": "RESTApi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon ./bin/www",
+    "migrate": "sequelize db:migrate",
+    "seed": "sequelize db:seed:all",
+    "undo": "sequelize db:migrate:undo:all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriy-melnikov/RESTApi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitriy-melnikov/RESTApi/issues"
+  },
+  "homepage": "https://github.com/dmitriy-melnikov/RESTApi#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.36.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
+}
